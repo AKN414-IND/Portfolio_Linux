@@ -1,0 +1,90 @@
+/* Desktop Styles */
+body#desktop {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#taskbar {
+  background-color: #111;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskbar div {
+  display: flex;
+  align-items: center;
+}
+
+#taskbar h3 {
+  margin: 0;
+  padding: 0 10px;
+}
+
+#current-time {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+  outline: none;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+button h5 {
+  margin: 15px;
+
+}
+
+/* App Styles */
+.window {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1;
+  cursor: move;
+  user-select: none;
+}
+
+#terminal-window {
+  width: 600px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  resize: both;
+  overflow: auto;
+}
+
+#terminal-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
