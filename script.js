@@ -39,3 +39,9 @@ const terminalButton = document.getElementById('terminal-button');
 terminalButton.addEventListener('click', () => {
   showWindow('terminal-window');
 });
+
+
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+  location.reload();
+});
