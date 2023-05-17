@@ -9,20 +9,15 @@ body {
 }
 
 #terminal {
-  width: 100%;
+  width: 800px;
+  height: 500px;
   margin: 0 auto;
   background-color: black;
   color: #0F0;
   padding: 10px;
-
   max-width: 800px;
-  /* Set the maximum width */
   max-height: 500px;
-  /* Set the maximum height */
   overflow: auto;
-  /* Enable scrolling if content exceeds the maximum size */
-
-
 }
 
 #input-line {
@@ -53,37 +48,13 @@ body {
 }
 
 .window {
-  width: 800px;
+  width: auto;
+  height: auto;
+  display: flex;
   background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-}
-
-.title-bar {
-  background-color: #333;
-  color: #FFF;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.title {
-  flex-grow: 1;
-  font-weight: bold;
-}
-
-.window-controls {
-  display: flex;
-}
-
-.window-controls button {
-  background-color: transparent;
-  border: none;
-  color: #FFF;
-  font-size: 12px;
-  margin-left: 5px;
-  cursor: pointer;
 }
 
 .content {
