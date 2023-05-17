@@ -124,8 +124,9 @@ button h5 {
   transition: transform .4s;
 }
 
+
 .box:nth-child(1)::before {
-  transform: translateY(-100%);
+  transform: translateY(-100%) translateX(-100%);
   content: 'A';
   color: aqua;
 }
@@ -133,10 +134,11 @@ button h5 {
 .box:nth-child(2)::before {
   content: 'R';
   color: white;
+  transform: translateY(100%) translateX(40%);
 }
 
 .box:nth-child(3)::before {
-  transform: translateY(-100%);
+  transform: translateY(-100%) translateX(-80%);
   content: 'U';
   color: white;
 }
@@ -144,30 +146,33 @@ button h5 {
 .box:nth-child(4)::before {
   content: 'N';
   color: white;
-}
-
-.box:nth-child(5)::before {
-  content: 'K';
-  transform: translateY(-100%);
-  color: aqua;
+  transform: translateY(100%) translateX(60%);
 }
 
 .box:nth-child(6)::before {
+  content: 'K';
+  transform: translateY(-100%) translateX(-60%);
+  color: aqua;
+}
+
+.box:nth-child(8)::before {
   content: 'N';
   color: white;
+  transform: translateY(100%) translateX(80%);
 }
-.box:nth-child(7)::before {
+.box:nth-child(9)::before {
   content: 'A';
-  transform: translateY(-100%);
+  transform: translateY(-100%) translateX(-40%);
   color: white;
 }
-.box:nth-child(8)::before {
+.box:nth-child(10)::before {
+  transform: translateY(100%) translateX(100%);
   content: 'I';
   color: white;
 }
-.box:nth-child(9)::before {
+.box:nth-child(11)::before {
   content: 'R';
-  transform: translateY(-100%);
+  transform: translateY(-100%) translateX(-20%);
   color: white;
 }
 
